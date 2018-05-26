@@ -87,3 +87,16 @@ console.log(cart.sort(function (a,b)
  }
  console.log(" Array of matching items: ")
  console.log(cart.find(findByName));
+ 
+ //5d
+ function countTotalCost()
+     {
+        var TotalCost = 0;
+    for(var i in cart)
+    {
+        TotalCost += cart[i].price * cart[i].quantity;
+    }
+    return TotalCost;
+     }
+     console.log("Total cost of the cart:")
+    console.log(countTotalCost());
