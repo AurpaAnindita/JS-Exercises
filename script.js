@@ -80,3 +80,10 @@ console.log(cart.sort(function (a,b)
     return a.quantity > b.quantity
 }));
 
+//5 c
+ function findByName(item)
+ {
+     return item.name == 'Watch';
+ }
+ console.log(" Array of matching items: ")
+ console.log(cart.find(findByName));
