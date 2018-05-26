@@ -44,7 +44,7 @@ var library = [
    }];
 function getReadingStatus(index)
 {
-    return [library[index].author,library[index].title,library[index].readingStatus];
+    return library[index].readingStatus;
 }
 console.log(getReadingStatus(1));
 
@@ -72,3 +72,11 @@ function addItem(newItem){
 }
 var newItem = {name: 'Watch', price: 64, quantity:1};
 addItem(newItem);
+
+//5 b
+console.log(" Sorted by quantity: ")
+console.log(cart.sort(function (a,b)
+{
+    return a.quantity > b.quantity
+}));
+
